@@ -1,0 +1,134 @@
+:root{
+    --color-violet: hsl(228, 45%, 44%);
+    --color-white: #FFFFFF;
+    --color-futter: #07043b;
+    --raleway:'Raleway', sans-serif;
+    --open-sans:'Open Sans', sans-serif;
+}
+body{
+    color: var(--color-futter);
+    padding: 0px;
+    margin: 0px;
+    background: var(--color-white);
+    font-family: var(--open-sans)
+
+}
+.header{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin: 40px;
+    font-family: var(--raleway);
+}
+
+img{
+    width: 100%;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.menu a{
+    font-size: 1em;
+    color: var(--color-violet);
+    text-decoration: none;
+    margin: 10px;
+}
+
+.productive-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+    padding: 50px;
+}
+
+.review{
+    border-radius: 1em;
+}
+
+.review-detail{
+    display: flex;
+    align-items: center;
+
+}
+
+.review-detail img{
+    width: 40px;
+    height: 40px;
+}
+
+.form-grid{
+    color: var(--color-white);
+    background-color: #575989;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+    gap: 10em;
+}
+
+footer{
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    background-color: var(--color-futter);
+}
+
+.input-btn{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+footer img{
+    width: 166px;
+    height: 49px;
+}
+
+.info{
+    padding: 50px;
+}
+.information{
+    line-height: 2em;
+    margin: 0;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: var(--color-white);
+    gap: 1em;
+    
+}
+.information p{
+    margin: 0;
+}
+
+.information ul{
+    margin: 0;
+    list-style: none;
+}
+
+.information a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+button{
+    border: none;
+    color: var(--color-white);
+    font-size: 1em;
+    border-radius: 3px;
+    
+}
+
+.productive-grid button{
+    background-color: #2f65f9;
+    padding: 0.5em 3em;
+    font-family: var(--raleway);
+}
+
+.productive-grid input{
+    padding: 1em;
+    border-radius: 3px;
+    border-width: 1px;
+    font-family: var(--open-sans);
+}
