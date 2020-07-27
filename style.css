@@ -5,14 +5,15 @@
     --raleway:'Raleway', sans-serif;
     --open-sans:'Open Sans', sans-serif;
 }
+
 body{
     color: var(--color-futter);
     padding: 0px;
     margin: 0px;
-    background: var(--color-white);
     font-family: var(--open-sans)
 
 }
+
 .header{
     display: grid;
     grid-template-columns: auto 1fr;
@@ -23,6 +24,10 @@ body{
 
 img{
     width: 100%;
+}
+
+input{
+    font-family: var(--open-sans);
 }
 
 .menu{
@@ -38,6 +43,14 @@ img{
     margin: 10px;
 }
 
+
+.container{
+    background: url(images/bg-curve-desktop.svg), linear-gradient(to top,#f9f8fe 0%, #f9f8fe 49%,white 49%,white 100% );
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+
 .productive-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -46,18 +59,37 @@ img{
 }
 
 .review{
-    border-radius: 1em;
+    border-radius: 7px;
+    background-color: white;
+    width: 50%;
+    padding: 2em;
+}
+
+.quotes{
+    width: 20px;
+    height: 20px;
+}
+
+.review-detail img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
 
 .review-detail{
     display: flex;
     align-items: center;
-
 }
 
-.review-detail img{
-    width: 40px;
-    height: 40px;
+.review-detail small{
+    display: block;
+    font-weight: 400;
+   
+}
+
+.from-grid-title{
+    margin: 0px;
 }
 
 .form-grid{
@@ -69,6 +101,24 @@ img{
     gap: 10em;
 }
 
+.form-grid input{
+    display: block;
+    border-radius: 3px;
+    border-width: 1px;
+    padding: 1em;
+    width: 90%;
+    margin-bottom: 10px;
+
+
+}
+
+.form-grid button{
+    background-color: #2f65f9;
+    padding:10px;
+    font-family: var(--raleway);
+    width: 45%;
+}
+
 footer{
     margin: 0px;
     padding: 0px;
@@ -78,9 +128,10 @@ footer{
 
 .input-btn{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
     gap: 1em;
 }
+
 footer img{
     width: 166px;
     height: 49px;
@@ -89,6 +140,7 @@ footer img{
 .info{
     padding: 50px;
 }
+
 .information{
     line-height: 2em;
     margin: 0;
@@ -96,8 +148,24 @@ footer img{
     grid-template-columns: repeat(4, 1fr);
     color: var(--color-white);
     gap: 1em;
-    
+    font-size: 1em;  
 }
+
+.link-fylo{
+    display: inline-block;
+    list-style: none;
+    margin-bottom: 2em;
+}
+
+.link-fylo a{
+    text-decoration: none;
+    color: #63dcd8; 
+    padding-right: 25px;
+    border-bottom: 1px solid #63dcd8;
+    background: url(images/icon-arrow.svg) no-repeat right ;   
+    background-size: 20px;
+}
+
 .information p{
     margin: 0;
 }
@@ -112,10 +180,15 @@ footer img{
     color: var(--color-white);
 }
 
+.contact-information{
+    display: grid;
+    grid-template-rows: 40px 40px;
+}
+
 button{
     border: none;
     color: var(--color-white);
-    font-size: 1em;
+    font-size: 0.9em;
     border-radius: 3px;
     
 }
@@ -130,5 +203,29 @@ button{
     padding: 1em;
     border-radius: 3px;
     border-width: 1px;
-    font-family: var(--open-sans);
+
+}
+.social{
+    display: flex;
+}
+.social a{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 10px;
+}
+.phone{
+    background: url(images/icon-phone.svg) no-repeat left top 5px;
+    background-size: 20px ;
+    padding-left: 40px;
+}
+
+.email{
+    background: url(images/icon-email.svg) no-repeat left top 5px;
+    background-size: 20px;
+    padding-left: 40px;
 }

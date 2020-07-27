@@ -8,13 +8,10 @@
   
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/1362f5eed7.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
   </head>
   <body>
     <header class="header">
@@ -31,55 +28,63 @@
         </li>
       </ul>
     </header>
-    <div class="productive-grid">
-      <div class="text">
-        <h1>
-          All your files in one secure location, accessible anywhere.
-        </h1>
-        <p>
-          Fylo stores your most important files in one secure location. 
-          Access them wherever you need, share and collaborate with friends, 
-          family, and co-workers.
-        </p>
-        <div class="input-btn">
-          <input type="email" placeholder="Enter your email...">
-          <button>Get Started</button>
-        </div>
-      </div>
-      <img src="images/illustration-1.svg" alt="">
-    </div>
-    <div class="productive-grid">
-      <div>
-        <h1>
-          Stay productive, wherever you are
-        </h1>
-        <p>
-          Never let location be an issue when accessing your files. Fylo has you 
-          covered for all of your file storage needs.
-        
-          Securely share files and folders with friends, family and colleagues for 
-          live collaboration. No email attachments required!
-        </p>
-        <u>See how Fylo works</u>
-        <div class="review">
+    <div class="container">
+      <div class="productive-grid">
+        <div class="text">
+          <h1>
+            All your files in one secure location, accessible anywhere.
+          </h1>
           <p>
-            Fylo has improved our team productivity by an order of magnitude. Since 
-            making the switch our team has become a well-oiled collaboration machine.
+            Fylo stores your most important files in one secure location. 
+            Access them wherever you need, share and collaborate with friends, 
+            family, and co-workers.
           </p>
-          <div class="review-detail">
-            <img src="images/avatar-testimonial.jpg" alt="">
-            <h3>
-              Kyle Burton
-              Founder & CEO, Huddle</h3>
+          <div class="input-btn">
+            <input type="email" placeholder="Enter your email...">
+            <button>Get Started</button>
           </div>
         </div>
+        <img src="images/illustration-1.svg" alt="">
       </div>
-      <img src="images/illustration-2.svg" alt="">
+      <div class="productive-grid">
+        <div>
+          <h1>
+            Stay productive, wherever you are
+          </h1>
+          <p>
+            Never let location be an issue when accessing your files. Fylo has you 
+            covered for all of your file storage needs.
+          
+            Securely share files and folders with friends, family and colleagues for 
+            live collaboration. No email attachments required!
+          </p>
+          <li class="link-fylo">
+            <a href="">See how Fylo works</a>
+          </li>
+          <div class="review">
+            <img class="quotes" src="images/icon-quotes.svg">
+            <p>
+              Fylo has improved our team productivity by an order of magnitude. Since 
+              making the switch our team has become a well-oiled collaboration machine.
+            </p>
+            <div class="review-detail">
+              <img src="images/avatar-testimonial.jpg" alt="">
+              <h3>
+                Kyle Burton
+                <small>
+                  Founder & CEO, Huddle
+                </small>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <img src="images/illustration-2.svg" alt="">
+      </div>
     </div>
     <section class="form">
       <div class="form-grid">
         <div>
-          <h1>
+          <h1 class="from-grid-title">
             Get early access today
           </h1>
           <p>
@@ -87,7 +92,7 @@
             If you have any questions, our support team would be happy to help you.
           </p>
         </div>
-        <div>
+        <div >
           <input type="email" placeholder="email@example.com">
           <button>Get Started For Free</button>
         </div>
@@ -131,9 +136,15 @@
         </li>
       </ul> 
       <div class="social">
-        <a href="#">f</a>
-        <a href="#">t</a>
-        <a href="#">i</a>
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
       </div>        
     </div>
     </div>
