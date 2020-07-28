@@ -6,12 +6,18 @@
     --open-sans:'Open Sans', sans-serif;
 }
 
+.container{
+    background: url(images/bg-curve-desktop.svg), linear-gradient(to top,#f9f8fe 0%, #f9f8fe 49%,white 49%,white 100% );
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+
 body{
     color: var(--color-futter);
     padding: 0px;
     margin: 0px;
     font-family: var(--open-sans)
-
 }
 
 .header{
@@ -28,12 +34,26 @@ img{
 
 input{
     font-family: var(--open-sans);
+    padding: 1em;
+    border-radius: 3px;
+    border-width: 1px;
+}
+
+button{
+    border: none;
+    color: var(--color-white);
+    font-size: 0.8em;
+    border-radius: 3px;
+    background-color: #2f65f9;
+    padding: 0.5em 3em;
+    font-family: var(--raleway)
 }
 
 .menu{
     display: flex;
     justify-content: flex-end;
     list-style: none;
+    text-align: center;
 }
 
 .menu a{
@@ -41,14 +61,6 @@ input{
     color: var(--color-violet);
     text-decoration: none;
     margin: 10px;
-}
-
-
-.container{
-    background: url(images/bg-curve-desktop.svg), linear-gradient(to top,#f9f8fe 0%, #f9f8fe 49%,white 49%,white 100% );
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center ;
 }
 
 .productive-grid{
@@ -62,19 +74,26 @@ input{
     border-radius: 7px;
     background-color: white;
     width: 50%;
-    padding: 2em;
+    padding: 0;
+    box-shadow: 1px 1px 11px 2px rgba(0,0,0,0.10);
 }
 
 .quotes{
     width: 20px;
     height: 20px;
+    padding: 1em 2em;
 }
 
+.review p{
+    padding: 0 2em;
+    margin: 0;
+}
+    
 .review-detail img{
+    margin: 0 1em 2em 2em;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    margin-right: 10px;
 }
 
 .review-detail{
@@ -84,8 +103,7 @@ input{
 
 .review-detail small{
     display: block;
-    font-weight: 400;
-   
+    font-weight: 400; 
 }
 
 .from-grid-title{
@@ -98,43 +116,34 @@ input{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 50px;
-    gap: 10em;
-}
-
-.form-grid input{
-    display: block;
-    border-radius: 3px;
-    border-width: 1px;
-    padding: 1em;
-    width: 90%;
-    margin-bottom: 10px;
-
-
+    gap: 3em;
 }
 
 .form-grid button{
-    background-color: #2f65f9;
-    padding:10px;
-    font-family: var(--raleway);
-    width: 45%;
+    width: 50%;
+}
+
+.input-btn2{
+    display: grid;
+    grid-template-rows: 40px 40px;
+    gap: 1em;
 }
 
 footer{
     margin: 0px;
     padding: 0px;
-    display: block;
     background-color: var(--color-futter);
-}
-
-.input-btn{
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 1em;
 }
 
 footer img{
     width: 166px;
     height: 49px;
+    margin: 1em 0;
+}
+.input-btn{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1em;
 }
 
 .info{
@@ -172,6 +181,7 @@ footer img{
 
 .information ul{
     margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -183,31 +193,13 @@ footer img{
 .contact-information{
     display: grid;
     grid-template-rows: 40px 40px;
+    gap: 1em;
 }
 
-button{
-    border: none;
-    color: var(--color-white);
-    font-size: 0.9em;
-    border-radius: 3px;
-    
-}
-
-.productive-grid button{
-    background-color: #2f65f9;
-    padding: 0.5em 3em;
-    font-family: var(--raleway);
-}
-
-.productive-grid input{
-    padding: 1em;
-    border-radius: 3px;
-    border-width: 1px;
-
-}
 .social{
     display: flex;
 }
+
 .social a{
     color: white;
     border: 1px solid white;
@@ -228,4 +220,57 @@ button{
     background: url(images/icon-email.svg) no-repeat left top 5px;
     background-size: 20px;
     padding-left: 40px;
+}
+
+@media screen and (max-width: 768px){
+    .form-grid{
+        display: block;
+        text-align: center;              
+    }
+    .form-grid button{
+        padding: 0;
+        width: 100%;
+    }
+
+    .form-grid input{
+        padding: 0 0 0 1em; 
+    }
+
+    .productive-grid{
+        grid-template-columns: 1fr;
+        text-align: center;
+
+    }
+    .productive-grid .ilustracion{
+        grid-row: -1;
+    }
+
+    .productive-grid button{
+        padding: 13px;
+    }
+
+    .review{
+        padding: 0px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .input-btn{
+        grid-template-columns: 1fr;
+    }
+
+    .information{
+        grid-template-columns: 1fr;
+    }
+
+    .social{
+        justify-content: center;
+    }
+    
+    .container{
+        background: url(images/bg-curve-mobile.svg), linear-gradient(to top,#f9f8fe 0%, #f9f8fe 49%,white 49%,white 100% );
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center ;
+    }
 }
